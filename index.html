@@ -54,7 +54,7 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[44.77378582343879,-0.6568920551961769],[44.78350007943097,-0.6393945477566053]]);
+        }).fitBounds([[44.774544009272326,-0.6511582748300614],[44.779401137268415,-0.6424095211102755]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -190,7 +190,7 @@
         }
         map.createPane('pane_Dcontamination_2');
         map.getPane('pane_Dcontamination_2').style.zIndex = 402;
-        map.getPane('pane_Dcontamination_2').style['mix-blend-mode'] = 'normal';
+        map.getPane('pane_Dcontamination_2').style['mix-blend-mode'] = 'multiply';
         var layer_Dcontamination_2 = new L.geoJson(json_Dcontamination_2, {
             attribution: '',
             interactive: true,
